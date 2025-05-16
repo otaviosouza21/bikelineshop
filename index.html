@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Line – Em Breve</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind custom configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#5371FD", // Azul da identidade Bike Line
+              accent: "#FFB800", // Tom de destaque
+              background: "#F5F7FA",
+              card: "#FFFFFF",
+              footer: "#1E2633",
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Scroll smooth */
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-background font-sans text-gray-800 overflow-x-hidden">
+    <!-- Navbar -->
+    <header
+      class="fixed w-full bg-background z-20 py-2 shadow-sm flex justify-center"
+    >
+      <img
+        src="./public/logos/logo_bl_semfundo/logo_semfundo-03.png"
+        alt="Bike Line"
+        class="h-10"
+      />
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative flex items-center justify-center h-screen">
+      <div
+        class="absolute inset-0 bg-gradient-to-br from-primary via-primary/70 to-primary/50"
+      ></div>
+      <div class="relative z-10 flex flex-col text-center px-2">
+        <img
+          src="./public/logos/logo_bl_semfundo/logo_semfundo-02.png"
+          width="500"
+          class="self-center"
+          alt=""
+        />
+        <h1 class="text-white text-xl md:text-5xl font-bold mb-4">
+          Estamos Chegando
+        </h1>
+        <p class="text-white/80 text-lg md:text-xl mb-8 max-w-lg mx-auto">
+          Estamos preparando a melhor experiência para apaixonados por
+          bicicletas. Fique ligado!
+        </p>
+        <div class="text-white/80 flex-col flex gap-2">
+          <p class="font-bold">Continue nos acompanhando nas redes</p>
+          <div class="flex justify-center space-x-4 text-xl">
+            <a
+              href=" https://www.instagram.com/bikelinebr/"
+              class="font-white hover:text-white transition"
+            >
+              <img
+                src="./public/icons/instagram (1).png"
+                alt="icon-instagram"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/bikelineoficial/?locale=pt_BR"
+              class="font-white hover:text-white transition"
+            >
+              <img src="./public/icons/facebook (1).png" alt="icon-facebook" />
+            </a>
+            <a
+              href="https://wa.me/551126108210?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20site%20em%20desenvolvimento."
+              class="text-white hover:text-white transition"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./public/icons/whatsapp-2.svg" class="size-6" alt="icon-telefone" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-footer text-gray-400 py-8">
+      <div class="container mx-auto text-center space-y-4">
+        <img
+          src="./public/logos/logo_bl_semfundo/logo_semfundo-02.png"
+          alt="Bike Line"
+          class="h-10 mx-auto"
+        />
+        <div class="text-sm">
+          <p>
+            Av. Antônio de Almeida, 220 - Jardim Marica<br />
+            Mogi das Cruzes - SP - 08775-420
+          </p>
+          <p><strong>(11) 2610-8210</strong></p>
+          <p>MOBILI COMERCIO DE PECAS E ACESSORIOS LTDA - 43.601.294/0003-81</p>
+        </div>
+        <div class="flex justify-center space-x-4 text-xl">
+          <a
+            href="https://www.instagram.com/bikelinebr/"
+            class="font-white hover:text-white transition"
+          >
+            <img src="./public/icons/instagram (1).png" alt="icon-instagram" />
+          </a>
+          <a
+            href="https://www.facebook.com/bikelineoficial/?locale=pt_BR"
+            class="font-white hover:text-white transition"
+          >
+            <img src="./public/icons/facebook (1).png" alt="icon-facebook" />
+          </a>
+          <a
+            href="https://wa.me/551126108210?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20seu%20site%20em%20desenvolvimento."
+            class="text-white hover:text-white transition"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./public/icons/whatsapp-2.svg" class="size-6" alt="icon-telefone" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

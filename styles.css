@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+  line-height: 1.5;
+}
+
+/* Container central */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  background-color: #2c63f6;
+  color: #fff;
+  padding: 1rem 0;
+}
+.site-header .logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+/* Main */
+.site-main {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 500px;
+  text-align: center;
+}
+.card-header {
+  font-size: 3rem;
+  position: relative;
+}
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: gold;
+  color: #000;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+.card-title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+.card-subtitle {
+  margin: 1rem 0 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.feature {
+  background: #f0f6ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  flex: 1;
+}
+.feature .icon {
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.feature h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+.feature p {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Formulário */
+.notify-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.notify-form input[type="email"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+.notify-form button {
+  padding: 0.75rem 1.25rem;
+  background: #2c63f6;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Social */
+.social a {
+  margin: 0 0.5rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: #2c63f6;
+}
+
+/* Footer */
+.site-footer {
+  background: #1e2633;
+  color: #aaa;
+  padding: 1.5rem 0;
+  font-size: 0.85rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo {
+  font-weight: bold;
+  color: #fff;
+}
+.footer-info div + div {
+  margin-top: 0.25rem;
+}
+
+/* Accessibility helper */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0);
+  border: 0;
+}
